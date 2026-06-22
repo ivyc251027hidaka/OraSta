@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Study IT | Oracle Silver SQL Learning</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Google Material Symbols -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- ======================================
+                    LEFT CONTENT
+        ======================================= -->
+
+        <section class="left">
+
+            <!-- SQL Background -->
+
+            <div class="sql-bg">
+
+                <span>SELECT</span>
+                <span>JOIN</span>
+                <span>GROUP BY</span>
+                <span>HAVING</span>
+                <span>ORDER BY</span>
+                <span>UNION</span>
+                <span>WHERE</span>
+                <span>NVL()</span>
+
+            </div>
+
+            <!-- Logo -->
+
+            <div class="logo">
+
+                <div class="logo-icon">
+
+                    &lt;/&gt;
+
+                </div>
+
+                <div class="logo-text">
+
+                    <h1>Study IT</h1>
+
+                    <p>Oracle Silver SQL Learning</p>
+
+                </div>
+
+            </div>
+
+            <!-- Hero -->
+
+            <div class="hero">
+
+                <h2 class="hero-title">
+
+                    Oracle Silver SQL を<br>
+
+                    <span>スキマ時間で</span><br>
+
+                    マスターしよう。
+
+                </h2>
+
+                <p class="hero-description">
+
+                    単語検索・クイズ・学習履歴を通して、
+                    Oracle Silver SQL資格取得を効率よくサポートする
+                    学習支援Webアプリです。
+
+                </p>
+
+            </div>
+
+            <!-- SQL Card -->
+
+            <div class="sql-card">
+
+                <div class="sql-header">
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                </div>
+
+<pre>
+<span style="color:#7DD3FC;">SELECT</span> knowledge
+<span style="color:#7DD3FC;">FROM</span> study_it
+<span style="color:#FBBF24;">WHERE</span> level = <span style="color:#FDE68A;">'Silver'</span>
+<span style="color:#7DD3FC;">ORDER BY</span> mastery <span style="color:#34D399;">DESC</span>;
+</pre>
+
+            </div>
+
+        </section>
+
+        <!-- ======================================
+                    RIGHT CONTENT
+        ======================================= -->
+
+        <section class="right">
+
+            <div class="login-card">
+
+                <h2>
+
+                    ログイン
+
+                </h2>
+
+                <p>
+
+                    学習を再開しましょう。
+
+                </p>
+
+                <form action="home.html" method="get">
+
+                    <!-- Email -->
+
+                    <div class="form-group">
+
+                        <label>
+
+                            メールアドレス
+
+                        </label>
+
+                        <div class="input-box">
+
+                            <span class="material-symbols-rounded">
+
+                                mail
+
+                            </span>
+
+                            <input
+
+                                type="email"
+
+                                placeholder="sample@email.com"
+
+                                >
+
+                        </div>
+
+                    </div>
+
+                    <!-- Password -->
+
+                    <div class="form-group">
+
+                        <label>
+
+                            パスワード
+
+                        </label>
+
+                        <div class="input-box">
+
+                            <span class="material-symbols-rounded">
+
+                                lock
+
+                            </span>
+
+                            <input
+                            type="password"
+                            placeholder="パスワードを入力してください">
+
+                        </div>
+
+                    </div>
+
+                    <!-- Remember -->
+
+                    <div class="remember">
+
+                        <label class="checkbox">
+
+                            <input type="checkbox">
+
+                            ログイン状態を保持する
+
+                        </label>
+
+                        <a href="forgot_password.html" class="forgot">
+
+                            パスワードを忘れた
+
+                        </a>
+
+                    </div>
+
+                    <!-- Button -->
+
+                    <button
+
+                        type="submit"
+
+                        class="login-btn">
+
+                        ログイン →
+
+                    </button>
+
+                </form>
+
+                <!-- Divider -->
+
+                <div class="divider">
+
+                    <span>
+
+                        OR
+
+                    </span>
+
+                </div>
+
+                <!-- Register -->
+
+                <div class="register">
+
+                    アカウントをお持ちでない方は
+
+                    <a href="register.html">
+
+                        新規登録
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </div>
+
+</body>
+
+</html>

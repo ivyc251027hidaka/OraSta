@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study IT | お気に入り単語</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/words.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0">
+</head>
+
+<body class="dashboard-body">
+
+    <div class="dashboard">
+
+        <aside class="sidebar">
+            <div class="sidebar-top">
+                <div class="sidebar-logo">
+                    <div class="logo-icon">&lt;/&gt;</div>
+                    <div>
+                        <h2>Study IT</h2>
+                        <p>Oracle Silver SQL</p>
+                    </div>
+                </div>
+
+                <nav>
+                    <a href="home.html">
+                        <span class="material-symbols-rounded">home</span>
+                        ホーム
+                    </a>
+                    <a href="words.html">
+                        <span class="material-symbols-rounded">menu_book</span>
+                        単語一覧
+                    </a>
+                    <a href="quiz.html">
+                        <span class="material-symbols-rounded">quiz</span>
+                        クイズ
+                    </a>
+                    <a class="active" href="favorite.html">
+                        <span class="material-symbols-rounded">star</span>
+                        お気に入り
+                    </a>
+                    <a href="history.html">
+                        <span class="material-symbols-rounded">monitoring</span>
+                        学習履歴
+                    </a>
+                    <a href="admin.html">
+                        <span class="material-symbols-rounded">admin_panel_settings</span>
+                        管理画面
+                    </a>
+                </nav>
+            </div>
+
+            <div class="sidebar-bottom">
+                <a href="login.html" class="logout-link">
+                    <span class="material-symbols-rounded">logout</span>
+                    ログアウト
+                </a>
+            </div>
+        </aside>
+
+        <main class="main">
+
+            <header class="topbar">
+                <div>
+                    <h1>お気に入り単語 ⭐</h1>
+                    <p>あなたがチェックした重要なSQLキーワード一覧です。</p>
+                </div>
+                <div class="user-area">
+                    <button class="notification">
+                        <span class="material-symbols-rounded">notifications</span>
+                    </button>
+                    <div class="avatar">A</div>
+                </div>
+            </header>
+
+            <section class="word-grid">
+
+                <div class="word-card">
+                    <h2>INNER JOIN</h2>
+                    <p>複数テーブルを結合するSQL句</p>
+                    <div class="card-bottom">
+                        <span class="level success">★★★</span>
+                        <a href="word_detail.html">詳細 →</a>
+                    </div>
+                </div>
+
+                <div class="word-card">
+                    <h2>NVL()</h2>
+                    <p>NULL値を指定した別の値に変換する関数</p>
+                    <div class="card-bottom">
+                        <span class="level warning">★★</span>
+                        <a href="word_detail.html">詳細 →</a>
+                    </div>
+                </div>
+
+                <div class="word-card">
+                    <h2>ROWNUM</h2>
+                    <p>返される結果の各行に行番号を割り当てる擬似列</p>
+                    <div class="card-bottom">
+                        <span class="level danger">★★★</span>
+                        <a href="word_detail.html">詳細 →</a>
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="pagination">
+                <a href="#">←</a>
+                <a class="active" href="#">1</a>
+                <a href="#">→</a>
+            </section>
+
+        </main>
+
+    </div>
+
+</body>
+
+</html>

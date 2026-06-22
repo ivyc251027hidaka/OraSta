@@ -1,0 +1,372 @@
+/* ==========================================
+   Study IT
+   Words Page
+========================================== */
+
+/* ---------- Search ---------- */
+
+.search-area{
+
+    margin-bottom:24px;
+
+}
+
+.search-box{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    background:#FFFFFF;
+
+    border-radius:18px;
+
+    padding:0 20px;
+
+    height:60px;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.05);
+
+}
+
+.search-box span{
+
+    color:#94A3B8;
+
+    font-size:28px;
+
+}
+
+.search-box input{
+
+    flex:1;
+
+    border:none;
+
+    outline:none;
+
+    font-size:16px;
+
+    background:transparent;
+
+    color:#1E293B;
+
+}
+
+/* ---------- Filter ---------- */
+
+.filter-area{
+
+    display:flex;
+
+    gap:18px;
+
+    margin-bottom:35px;
+
+    flex-wrap:wrap;
+
+}
+
+.filter-area select{
+
+    min-width:180px;
+
+    height:50px;
+
+    border:none;
+
+    outline:none;
+
+    border-radius:14px;
+
+    background:#FFFFFF;
+
+    padding:0 18px;
+
+    font-size:15px;
+
+    color:#475569;
+
+    cursor:pointer;
+
+    box-shadow:0 6px 20px rgba(0,0,0,.05);
+
+    transition:.3s;
+
+}
+
+.filter-area select:hover{
+
+    transform:translateY(-2px);
+
+}
+
+/* ---------- Word Grid ---------- */
+
+.word-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+    gap:24px;
+
+}
+
+/* ---------- Word Card ---------- */
+
+.word-card{
+
+    background:#FFFFFF;
+
+    border-radius:24px;
+
+    padding:28px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.05);
+
+    transition:.3s;
+
+    border:2px solid transparent;
+
+}
+
+.word-card:hover{
+
+    transform:translateY(-6px);
+
+    border-color:#4F46E5;
+
+    box-shadow:0 18px 40px rgba(79,70,229,.12);
+
+}
+
+.word-card h2{
+
+    margin:0;
+
+    color:#4F46E5;
+
+    font-size:28px;
+
+    font-weight:700;
+
+}
+
+.word-card p{
+
+    margin:18px 0 28px;
+
+    color:#64748B;
+
+    line-height:1.8;
+
+    min-height:55px;
+
+}
+
+/* ---------- Card Bottom ---------- */
+
+.card-bottom{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+.card-bottom a{
+
+    text-decoration:none;
+
+    color:#4F46E5;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.card-bottom a:hover{
+
+    transform:translateX(5px);
+
+}
+
+/* ---------- Level ---------- */
+
+.level{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    min-width:70px;
+
+    height:34px;
+
+    border-radius:999px;
+
+    font-size:14px;
+
+    font-weight:bold;
+
+    color:#FFFFFF;
+
+}
+
+.success{
+
+    background:#10B981;
+
+}
+
+.warning{
+
+    background:#F59E0B;
+
+}
+
+.normal{
+
+    background:#94A3B8;
+
+}
+
+/* ---------- Pagination ---------- */
+
+.pagination{
+
+    margin-top:50px;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:12px;
+
+}
+
+.pagination a{
+
+    width:42px;
+
+    height:42px;
+
+    border-radius:12px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-decoration:none;
+
+    background:#FFFFFF;
+
+    color:#475569;
+
+    font-weight:600;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.05);
+
+    transition:.3s;
+
+}
+
+.pagination a:hover{
+
+    background:#EEF2FF;
+
+    color:#4F46E5;
+
+}
+
+.pagination .active{
+
+    background:#4F46E5;
+
+    color:#FFFFFF;
+
+}
+
+/* ---------- Animation ---------- */
+
+.word-card{
+
+    animation:fadeUp .6s ease;
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(25px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* ---------- Responsive ---------- */
+
+@media(max-width:900px){
+
+    .filter-area{
+
+        flex-direction:column;
+
+    }
+
+    .filter-area select{
+
+        width:100%;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .word-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .word-card{
+
+        padding:22px;
+
+    }
+
+    .word-card h2{
+
+        font-size:24px;
+
+    }
+
+    .pagination{
+
+        flex-wrap:wrap;
+
+    }
+
+}

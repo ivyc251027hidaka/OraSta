@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Study IT | Home</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/home.css">
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0">
+
+</head>
+
+<body class="dashboard-body">
+
+    <div class="dashboard">
+
+        <!-- ===========================
+                Sidebar
+        ============================ -->
+
+        <aside class="sidebar">
+
+    <div class="sidebar-top">
+
+        <!-- Logo -->
+
+        <div class="sidebar-logo">
+
+            <div class="logo-icon">
+
+                &lt;/&gt;
+
+            </div>
+
+            <div>
+
+                <h2>Study IT</h2>
+
+                <p>Oracle Silver SQL</p>
+
+            </div>
+
+        </div>
+
+        <!-- Navigation -->
+
+        <nav>
+
+            <a class="active" href="home.html">
+
+                <span class="material-symbols-rounded">home</span>
+
+                ホーム
+
+            </a>
+
+            <a href="words.html">
+
+                <span class="material-symbols-rounded">menu_book</span>
+
+                単語一覧
+
+            </a>
+
+            <a href="quiz.html">
+
+                <span class="material-symbols-rounded">quiz</span>
+
+                クイズ
+
+            </a>
+
+            <a href="favorites.html">
+
+                <span class="material-symbols-rounded">star</span>
+
+                お気に入り
+
+            </a>
+
+            <a href="history.html">
+
+                <span class="material-symbols-rounded">monitoring</span>
+
+                学習履歴
+
+            </a>
+
+            <a href="admin.html">
+
+                <span class="material-symbols-rounded">
+                    admin_panel_settings
+                </span>
+
+                管理画面
+
+            </a>
+
+        </nav>
+
+    </div>
+
+    <!-- 左下ログアウト -->
+
+    <div class="sidebar-bottom">
+
+        <a href="login.html" class="logout-link">
+
+            <span class="material-symbols-rounded">
+
+                logout
+
+            </span>
+
+            ログアウト
+
+        </a>
+
+    </div>
+
+</aside>
+
+        <!-- ===========================
+                Main
+        ============================ -->
+
+        <main class="main">
+
+            <!-- Header -->
+
+            <header class="topbar">
+
+                <div>
+
+                    <h1>
+
+                        おかえり、Adminさん 👋
+
+                    </h1>
+
+                    <p>
+
+                        今日もOracle Silver SQLを学習しましょう。
+
+                    </p>
+
+                </div>
+
+                <div class="user-area">
+
+                    <button class="notification">
+
+                        <span class="material-symbols-rounded">
+
+                            notifications
+
+                        </span>
+
+                    </button>
+
+                    <div class="avatar">
+
+                        A
+
+                    </div>
+
+                </div>
+
+            </header>
+
+            <!-- Statistics -->
+
+            <section class="stats">
+
+                <div class="stat-card">
+
+                    <div>
+
+                        <small>連続学習</small>
+
+                        <h2>12日</h2>
+
+                    </div>
+
+                    🔥
+
+                </div>
+
+                <div class="stat-card">
+
+                    <div>
+
+                        <small>登録単語</small>
+
+                        <h2>248</h2>
+
+                    </div>
+
+                    📚
+
+                </div>
+
+                <div class="stat-card">
+
+                    <div>
+
+                        <small>正答率</small>
+
+                        <h2>84%</h2>
+
+                    </div>
+
+                    🎯
+
+                </div>
+
+            </section>
+
+            <!-- Content -->
+
+            <section class="dashboard-grid">
+
+                <!-- Today's Word -->
+
+                <div class="card">
+
+                    <div class="card-title">
+
+                        Today's Word
+
+                    </div>
+
+                    <h2>
+
+                        SELECT
+
+                    </h2>
+
+                    <p>
+
+                        テーブルから必要なデータを取得するための基本命令。
+
+                    </p>
+
+                    <button class="primary-btn">
+
+                        詳しく見る
+
+                    </button>
+
+                </div>
+
+                <!-- Quiz -->
+
+                <div class="card gradient-card">
+
+                    <div class="card-title">
+
+                        Today's Quiz
+
+                    </div>
+
+                    <h2>
+
+                        10問チャレンジ
+
+                    </h2>
+
+                    <p>
+
+                        今日のおすすめ問題に挑戦しましょう。
+
+                    </p>
+
+                    <button class="white-btn">
+
+                        START QUIZ →
+
+                    </button>
+
+                </div>
+
+                <!-- Progress -->
+
+                <div class="card">
+
+                    <div class="card-title">
+
+                        学習進捗
+
+                    </div>
+
+                    <h3>
+
+                        Oracle Silver SQL
+
+                    </h3>
+
+                    <div class="progress">
+
+                        <div class="progress-bar">
+
+                        </div>
+
+                    </div>
+
+                    <strong>
+
+                        80%
+
+                    </strong>
+
+                </div>
+
+                <!-- Recent -->
+
+                <div class="card">
+
+                    <div class="card-title">
+
+                        最近学習した単語
+
+                    </div>
+
+                    <ul class="word-list">
+
+                        <li>JOIN</li>
+
+                        <li>GROUP BY</li>
+
+                        <li>HAVING</li>
+
+                        <li>ORDER BY</li>
+
+                        <li>WHERE</li>
+
+                    </ul>
+
+                </div>
+
+            </section>
+
+            <!-- ===========================
+                    Bottom Section
+            =========================== -->
+
+<section class="bottom-grid">
+
+    <!-- Weekly Goal -->
+
+    <div class="card">
+
+        <div class="card-title">
+
+            今週の目標
+
+        </div>
+
+        <h3>
+
+            70 / 100 問
+
+        </h3>
+
+        <div class="progress">
+
+            <div class="progress-bar" style="width:70%;"></div>
+
+        </div>
+
+        <p>
+
+            あと30問で今週の目標達成！
+
+        </p>
+
+    </div>
+
+    <!-- Favorite Words -->
+
+    <div class="card">
+
+        <div class="card-title">
+
+            お気に入り単語
+
+        </div>
+
+        <ul class="word-list">
+
+            <li>INNER JOIN</li>
+            <li>OUTER JOIN</li>
+            <li>NVL()</li>
+            <li>ROWNUM</li>
+            <li>TRUNC()</li>
+
+        </ul>
+
+    </div>
+
+    <!-- Learning Calendar -->
+
+    <div class="card calendar-card">
+
+        <div class="card-title">
+
+            学習カレンダー
+
+        </div>
+
+        <div class="calendar">
+
+            <span>月</span>
+            <span>火</span>
+            <span>水</span>
+            <span>木</span>
+            <span>金</span>
+            <span>土</span>
+            <span>日</span>
+
+            <span class="active"></span>
+            <span class="active"></span>
+            <span class="active"></span>
+            <span></span>
+            <span class="active"></span>
+            <span class="active"></span>
+            <span></span>
+
+        </div>
+
+    </div>
+
+</section>
+
+<footer class="footer">
+
+    © 2026 Study IT | Oracle Silver SQL Learning
+
+</footer>
+
+        </main>
+
+    </div>
+
+</body>
+
+</html>

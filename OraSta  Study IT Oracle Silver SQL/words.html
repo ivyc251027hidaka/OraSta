@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Study IT | 単語一覧</title>
+
+    <!-- 共通CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- ホーム共通レイアウト -->
+    <link rel="stylesheet" href="css/home.css">
+
+    <!-- 単語一覧専用CSS -->
+    <link rel="stylesheet" href="css/words.css">
+
+    <!-- Google Icons -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0">
+
+</head>
+
+<body class="dashboard-body">
+
+    <div class="dashboard">
+
+        <!-- ===========================
+                Sidebar
+        ============================ -->
+
+        <aside class="sidebar">
+            
+            <div class="sidebar-top">
+                <div class="sidebar-logo">
+                    <div class="logo-icon">
+                        &lt;/&gt;
+                    </div>
+                    <div>
+                        <h2>Study IT</h2>
+                        <p>Oracle Silver SQL</p>
+                    </div>
+                </div>
+
+                <nav>
+                    <a href="home.html">
+                        <span class="material-symbols-rounded">home</span>
+                        ホーム
+                    </a>
+                    <a class="active" href="words.html">
+                        <span class="material-symbols-rounded">menu_book</span>
+                        単語一覧
+                    </a>
+                    <a href="quiz.html">
+                        <span class="material-symbols-rounded">quiz</span>
+                        クイズ
+                    </a>
+                    <a href="favorite.html">
+                        <span class="material-symbols-rounded">star</span>
+                        お気に入り
+                    </a>
+                    <a href="history.html">
+                        <span class="material-symbols-rounded">monitoring</span>
+                        学習履歴
+                    </a>
+                    <a href="admin.html">
+                        <span class="material-symbols-rounded">admin_panel_settings</span>
+                        管理画面
+                    </a>
+                </nav>
+            </div>
+
+            <div class="sidebar-bottom">
+                <a href="login.html" class="logout-link">
+                    <span class="material-symbols-rounded">logout</span>
+                    ログアウト
+                </a>
+            </div>
+
+        </aside>
+
+
+        <!-- ===========================
+                    Main
+        ============================ -->
+
+        <main class="main">
+
+            <!-- Header -->
+
+            <header class="topbar">
+
+                <div>
+
+                    <h1>
+
+                        Oracle Silver SQL 単語一覧
+
+                    </h1>
+
+                    <p>
+
+                        SQLキーワードを検索して理解を深めましょう。
+
+                    </p>
+
+                </div>
+
+                <div class="user-area">
+
+                    <button class="notification">
+
+                        <span class="material-symbols-rounded">
+
+                            notifications
+
+                        </span>
+
+                    </button>
+
+                    <div class="avatar">
+
+                        A
+
+                    </div>
+
+                </div>
+
+            </header>
+
+            <!-- Search -->
+
+            <section class="search-area">
+
+                <div class="search-box">
+
+                    <span class="material-symbols-rounded">
+
+                        search
+
+                    </span>
+
+                    <input
+                        type="text"
+                        placeholder="SQLキーワードを検索">
+
+                </div>
+
+            </section>
+
+            <!-- Filter -->
+
+            <section class="filter-area">
+
+                <select>
+
+                    <option>
+
+                        カテゴリ：すべて
+
+                    </option>
+
+                    <option>
+
+                        SELECT系
+
+                    </option>
+
+                    <option>
+
+                        JOIN系
+
+                    </option>
+
+                    <option>
+
+                        関数
+
+                    </option>
+
+                </select>
+
+                <select>
+
+                    <option>
+
+                        難易度：すべて
+
+                    </option>
+
+                    <option>
+
+                        ★★★
+
+                    </option>
+
+                    <option>
+
+                        ★★
+
+                    </option>
+
+                    <option>
+
+                        ★
+
+                    </option>
+
+                </select>
+
+                <select>
+
+                    <option>
+
+                        並び順：A-Z
+
+                    </option>
+
+                    <option>
+
+                        習熟度順
+
+                    </option>
+
+                </select>
+
+            </section>
+
+            <!-- Word List -->
+
+            <section class="word-grid">
+
+                <div class="word-card">
+
+                    <h2>SELECT</h2>
+
+                    <p>
+
+                        テーブルからデータを取得する基本命令
+
+                    </p>
+
+                    <div class="card-bottom">
+
+                        <span class="level success">
+
+                            ★★★
+
+                        </span>
+
+                        <a href="word_detail.html">
+
+                            詳細 →
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="word-card">
+
+                    <h2>FROM</h2>
+
+                    <p>
+
+                        データを取得するテーブルを指定する句
+
+                    </p>
+
+                    <div class="card-bottom">
+
+                        <span class="level warning">
+
+                            ★★
+
+                        </span>
+
+                        <a href="word_detail.html">
+
+                            詳細 →
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="word-card">
+
+                    <h2>WHERE</h2>
+
+                    <p>
+
+                        条件を指定してデータを抽出する句
+
+                    </p>
+
+                    <div class="card-bottom">
+
+                        <span class="level success">
+
+                            ★★★
+
+                        </span>
+
+                        <a href="word_detail.html">
+
+                            詳細 →
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="word-card">
+
+                    <h2>GROUP BY</h2>
+
+                    <p>
+
+                        データをグループ化する句
+
+                    </p>
+
+                    <div class="card-bottom">
+
+                        <span class="level normal">
+
+                            ★
+
+                        </span>
+
+                        <a href="word_detail.html">
+
+                            詳細 →
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="word-card">
+
+                    <h2>INNER JOIN</h2>
+
+                    <p>
+
+                        複数テーブルを結合するSQL句
+
+                    </p>
+
+                    <div class="card-bottom">
+
+                        <span class="level success">
+
+                            ★★★
+
+                        </span>
+
+                        <a href="word_detail.html">
+
+                            詳細 →
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="word-card">
+
+                    <h2>ORDER BY</h2>
+
+                    <p>
+
+                        データを昇順・降順に並べ替える句
+
+                    </p>
+
+                    <div class="card-bottom">
+
+                        <span class="level warning">
+
+                            ★★
+
+                        </span>
+
+                        <a href="word_detail.html">
+
+                            詳細 →
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- Pagination -->
+
+            <section class="pagination">
+
+                <a href="#">
+
+                    ←
+
+                </a>
+
+                <a class="active" href="#">
+
+                    1
+
+                </a>
+
+                <a href="#">
+
+                    2
+
+                </a>
+
+                <a href="#">
+
+                    3
+
+                </a>
+
+                <a href="#">
+
+                    4
+
+                </a>
+
+                <a href="#">
+
+                    5
+
+                </a>
+
+                <a href="#">
+
+                    →
+
+                </a>
+
+            </section>
+
+        </main>
+
+    </div>
+
+</body>
+
+</html>

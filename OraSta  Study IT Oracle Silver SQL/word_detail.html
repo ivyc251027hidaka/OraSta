@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study IT | 単語詳細</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/words.css">
+    <link rel="stylesheet" href="css/word_detail.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0">
+</head>
+
+<body class="dashboard-body">
+
+    <div class="dashboard">
+
+        <!-- ===========================
+                Sidebar
+        ============================ -->
+
+        <aside class="sidebar">
+            <div class="sidebar-top">
+                <div class="sidebar-logo">
+                    <div class="logo-icon">&lt;/&gt;</div>
+                    <div>
+                        <h2>Study IT</h2>
+                        <p>Oracle Silver SQL</p>
+                    </div>
+                </div>
+
+                <nav>
+                    <a href="home.html">
+                        <span class="material-symbols-rounded">home</span>
+                        ホーム
+                    </a>
+                    <a class="active" href="words.html">
+                        <span class="material-symbols-rounded">menu_book</span>
+                        単語一覧
+                    </a>
+                    <a href="quiz.html">
+                        <span class="material-symbols-rounded">quiz</span>
+                        クイズ
+                    </a>
+                    <a href="favorite.html">
+                        <span class="material-symbols-rounded">star</span>
+                        お気に入り
+                    </a>
+                    <a href="history.html">
+                        <span class="material-symbols-rounded">monitoring</span>
+                        学習履歴
+                    </a>
+                    <a href="admin.html">
+                        <span class="material-symbols-rounded">admin_panel_settings</span>
+                        管理画面
+                    </a>
+                </nav>
+            </div>
+
+            <div class="sidebar-bottom">
+                <a href="login.html" class="logout-link">
+                    <span class="material-symbols-rounded">logout</span>
+                    ログアウト
+                </a>
+            </div>
+        </aside>
+
+        <!-- ===========================
+                Main
+        ============================ -->
+
+        <main class="main">
+
+            <header class="topbar">
+                <div>
+                    <h1>単語詳細</h1>
+                    <p>SQLキーワードの詳細情報と使用例を確認できます。</p>
+                </div>
+                <div class="user-area">
+                    <a href="words.html" class="back-btn">
+                        <span class="material-symbols-rounded">arrow_back</span>
+                        単語一覧に戻る
+                    </a>
+                </div>
+            </header>
+
+            <!-- メイン詳細カード -->
+            <div class="detail-card card">
+                <span class="category-badge">結合(JOIN)</span>
+                <h2 class="word-title">INNER JOIN</h2>
+
+                <div class="level-row">
+                    <span class="level success">★★★</span>
+                    <span class="level-label">習熟度：高</span>
+                </div>
+
+                <p class="word-description">
+                    2つ以上のテーブルから、指定した結合条件に一致する行のみを取得するSQL句です。<br>
+                    一致しない行は結果に含まれません。最も基本的な結合方法で、Oracle Silver SQLでは頻出の構文です。
+                </p>
+
+                <div class="action-row">
+                    <a href="quiz.html" class="btn btn-primary" style="text-decoration: none;">
+                        <span class="material-symbols-rounded">quiz</span>
+                        クイズに挑戦する
+                    </a>
+                    <button class="btn btn-star">
+                        <span class="material-symbols-rounded">star</span>
+                        お気に入りに追加
+                    </button>
+                    <a href="#" class="btn btn-outline" style="text-decoration: none;">
+                        <span class="material-symbols-rounded">arrow_back</span>
+                        前の単語
+                    </a>
+                    <a href="#" class="btn btn-outline" style="text-decoration: none;">
+                        次の単語
+                        <span class="material-symbols-rounded">arrow_forward</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- 使用例 ＋ 学習情報 -->
+            <div class="detail-grid">
+
+                <div class="card">
+                    <h3 class="section-title">使用例</h3>
+                    <pre class="detail-code-block"><code><span class="kw">SELECT</span> emp.employee_id,
+       dept.department_name
+<span class="kw">FROM</span> employees emp
+<span class="kw">INNER JOIN</span> department dept
+<span class="kw">ON</span> emp.department_id = dept.department_id;</code></pre>
+
+                    <h3 class="section-title" style="margin-top: 28px;">ポイント</h3>
+                    <ul class="point-list">
+                        <li>ON句で結合条件を指定する</li>
+                        <li>両テーブルに一致するデータのみ返される</li>
+                        <li><code>JOIN</code>のみの記述でも同じ意味（INNERは省略可）</li>
+                        <li>複数テーブルを連続してJOINすることも可能</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h3 class="section-title">学習情報</h3>
+                    <div class="meta-list">
+
+                        <div class="meta-item">
+                            <label>カテゴリ</label>
+                            <p>結合(JOIN)</p>
+                        </div>
+
+                        <div class="meta-item">
+                            <label>難易度</label>
+                            <p>★★★　上級</p>
+                        </div>
+
+                        <div class="meta-item">
+                            <label>クイズ正解率</label>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 75%;"></div>
+                            </div>
+                            <p class="progress-label">75%（6回中5回正解）</p>
+                        </div>
+
+                        <div class="meta-item">
+                            <label>最終学習日</label>
+                            <p>2026年6月20日</p>
+                        </div>
+
+                        <div class="meta-item">
+                            <label>登録日</label>
+                            <p>2026年4月10日</p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- 関連単語 -->
+            <div class="card" style="margin-top: 24px;">
+                <h3 class="section-title">関連単語</h3>
+                <div class="related-grid">
+
+                    <a href="word_detail.html" class="related-card">
+                        <h4>LEFT OUTER JOIN</h4>
+                        <p>左テーブルの全行と右テーブルの一致する行を取得</p>
+                        <span class="level warning" style="margin-top: 12px; display: inline-flex;">★★</span>
+                    </a>
+
+                    <a href="word_detail.html" class="related-card">
+                        <h4>RIGHT OUTER JOIN</h4>
+                        <p>右テーブルの全行と左テーブルの一致する行を取得</p>
+                        <span class="level warning" style="margin-top: 12px; display: inline-flex;">★★</span>
+                    </a>
+
+                    <a href="word_detail.html" class="related-card">
+                        <h4>CROSS JOIN</h4>
+                        <p>2つのテーブルの全行の組み合わせを取得（直積）</p>
+                        <span class="level normal" style="margin-top: 12px; display: inline-flex;">★</span>
+                    </a>
+
+                    <a href="word_detail.html" class="related-card">
+                        <h4>FULL OUTER JOIN</h4>
+                        <p>両テーブルの全行を取得し、一致しない部分はNULL</p>
+                        <span class="level normal" style="margin-top: 12px; display: inline-flex;">★</span>
+                    </a>
+
+                    <a href="word_detail.html" class="related-card">
+                        <h4>ON句</h4>
+                        <p>JOINの結合条件を指定するキーワード</p>
+                        <span class="level success" style="margin-top: 12px; display: inline-flex;">★★★</span>
+                    </a>
+
+                    <a href="word_detail.html" class="related-card">
+                        <h4>USING句</h4>
+                        <p>同名の列を結合条件に使う場合のON句の省略形</p>
+                        <span class="level warning" style="margin-top: 12px; display: inline-flex;">★★</span>
+                    </a>
+
+                </div>
+            </div>
+
+            <footer class="footer">
+                © 2026 Study IT | Oracle Silver SQL Learning
+            </footer>
+
+        </main>
+
+    </div>
+
+</body>
+</html>

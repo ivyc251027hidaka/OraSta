@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study IT | クイズ</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/quiz.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0">
+</head>
+
+<body class="dashboard-body">
+
+    <div class="dashboard">
+
+        <aside class="sidebar">
+            <div class="sidebar-top">
+                <div class="sidebar-logo">
+                    <div class="logo-icon">&lt;/&gt;</div>
+                    <div>
+                        <h2>Study IT</h2>
+                        <p>Oracle Silver SQL</p>
+                    </div>
+                </div>
+
+                <nav>
+                    <a href="home.html">
+                        <span class="material-symbols-rounded">home</span>
+                        ホーム
+                    </a>
+                    <a href="words.html">
+                        <span class="material-symbols-rounded">menu_book</span>
+                        単語一覧
+                    </a>
+                    <a class="active" href="quiz.html">
+                        <span class="material-symbols-rounded">quiz</span>
+                        クイズ
+                    </a>
+                    <a href="favorite.html">
+                        <span class="material-symbols-rounded">star</span>
+                        お気に入り
+                    </a>
+                    <a href="history.html">
+                        <span class="material-symbols-rounded">monitoring</span>
+                        学習履歴
+                    </a>
+                    <a href="admin.html">
+                        <span class="material-symbols-rounded">admin_panel_settings</span>
+                        管理画面
+                    </a>
+                </nav>
+            </div>
+
+            <div class="sidebar-bottom">
+                <a href="login.html" class="logout-link">
+                    <span class="material-symbols-rounded">logout</span>
+                    ログアウト
+                </a>
+            </div>
+        </aside>
+
+        <main class="main">
+
+            <header class="topbar">
+                <div>
+                    <h1>実力確認クイズ 🧠</h1>
+                    <p>出題範囲を絞り込んで、Oracle Silver SQLの試験対策クイズに挑戦しましょう。</p>
+                </div>
+                <div class="user-area">
+                    <div class="avatar">A</div>
+                </div>
+            </header>
+
+            <section class="card quiz-setup-card">
+                <div class="setup-header">
+                    <h2><span class="material-symbols-rounded">tune</span> 出題設定</h2>
+                    <p>苦手な分野やレベルに合わせてクイズをカスタマイズできます。</p>
+                </div>
+
+                <form class="quiz-setup-form" action="quiz_play.html" method="GET">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="quiz-category">出題分野</label>
+                            <select id="quiz-category" name="category">
+                                <option value="all">全分野からランダム</option>
+                                <option value="select">データ検索(SELECT)</option>
+                                <option value="join">結合(JOIN)</option>
+                                <option value="function">関数</option>
+                                <option value="subquery">副問合せ</option>
+                                <option value="ddl">データ定義言語(DDL)</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="quiz-difficulty">難易度</label>
+                            <select id="quiz-difficulty" name="difficulty">
+                                <option value="all">すべての難易度</option>
+                                <option value="1">★☆☆ (易しい)</option>
+                                <option value="2">★★☆ (普通)</option>
+                                <option value="3">★★★ (難しい)</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="quiz-count">出題数</label>
+                            <select id="quiz-count" name="count">
+                                <option value="5">5問</option>
+                                <option value="10" selected>10問</option>
+                                <option value="20">20問</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="start-quiz-btn">
+                        <span class="material-symbols-rounded">play_arrow</span>
+                        この設定でクイズを開始する
+                    </button>
+                </form>
+            </section>
+
+            <footer class="footer">
+                © 2026 Study IT | Oracle Silver SQL Learning
+            </footer>
+
+        </main>
+
+    </div>
+
+</body>
+</html>

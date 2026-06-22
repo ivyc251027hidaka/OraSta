@@ -1,0 +1,227 @@
+/* ==========================================
+   Study IT
+   Admin Page専用CSS
+========================================== */
+
+/* ---------- 新規追加ボタン（ヘッダー右側） ---------- */
+.add-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: linear-gradient(135deg, #4F46E5, #6366F1);
+    color: #FFFFFF;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(79, 70, 229, 0.25);
+    transition: .3s;
+}
+
+.add-btn :hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(79, 70, 229, 0.35);
+}
+
+.add-btn span {
+    font-size: 20px;
+}
+
+/* ---------- 統計ミニカード ---------- */
+.admin-stats {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.astat-card {
+    background: #FFFFFF;
+    border-radius: 16px;
+    padding: 16px 24px;
+    border: 1px solid #E2E8F0;
+    min-width: 180px;
+}
+
+.astat-card small {
+    color: #64748B;
+    font-size: 13px;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.astat-card h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #1E293B;
+}
+
+.astat-card h2 small {
+    display: inline;
+    font-size: 14px;
+    color: #94A3B8;
+}
+
+/* ---------- 管理カード・ヘッダー ---------- */
+.admin-card {
+    padding: 24px;
+    margin-bottom: 30px;
+}
+
+.admin-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+/* カード内検索ボックス */
+.admin-search {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: #F8FAFC;
+    border: 1px solid #E2E8F0;
+    border-radius: 10px;
+    padding: 0 14px;
+    height: 40px;
+    width: 260px;
+}
+
+.admin-search span {
+    color: #94A3B8;
+    font-size: 20px;
+}
+
+.admin-search input {
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 14px;
+    width: 100%;
+    color: #1E293B;
+}
+
+/* ---------- 管理用テーブル ---------- */
+.table-wrapper {
+    overflow-x: auto;
+}
+
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.admin-table th,
+.admin-table td {
+    padding: 14px 18px;
+    font-size: 14px;
+    border-bottom: 1px solid #F1F5F9;
+}
+
+.admin-table th {
+    background: #F8FAFC;
+    color: #64748B;
+    font-weight: 600;
+}
+
+.admin-table tbody tr:hover {
+    background: #FAFBFC;
+}
+
+.word-name {
+    color: #4F46E5;
+    font-size: 15px;
+}
+
+/* ---------- 難易度バッジ ---------- */
+.badge {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 600;
+}
+.badge-easy { background: #E6F4EA; color: #137333; }
+.badge-normal { background: #FEF7E0; color: #B06000; }
+.badge-hard { background: #FCE8E6; color: #C5221F; }
+
+/* ---------- 操作ボタン（編集・削除） ---------- */
+.actions {
+    display: flex;
+    gap: 8px;
+}
+
+.action-btn {
+    width: 34px;
+    height: 34px;
+    border-radius: 8px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.action-btn span {
+    font-size: 18px;
+}
+
+/* 編集ボタン (青) */
+.action-btn.edit {
+    background: #EFF6FF;
+    color: #2563EB;
+}
+.action-btn.edit:hover {
+    background: #2563EB;
+    color: #FFFFFF;
+}
+
+/* 削除ボタン (赤) */
+.action-btn.delete {
+    background: #FFF5F5;
+    color: #EF4444;
+}
+.action-btn.delete:hover {
+    background: #EF4444;
+    color: #FFFFFF;
+}
+
+/* ---------- ページネーション ---------- */
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 20px;
+}
+
+.pagination a {
+    width: 38px;
+    height: 38px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background: #FFFFFF;
+    color: #475569;
+    font-weight: 600;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
+    font-size: 14px;
+    transition: .3s;
+}
+
+.pagination a:hover {
+    background: #EEF2FF;
+    color: #4F46E5;
+}
+
+.pagination .active {
+    background: #4F46E5;
+    color: #FFFFFF;
+}

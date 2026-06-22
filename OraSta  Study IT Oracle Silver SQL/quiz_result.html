@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study IT | クイズ結果</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/quiz.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0">
+</head>
+
+<body class="dashboard-body">
+
+    <div class="dashboard">
+
+        <aside class="sidebar">
+            <div class="sidebar-top">
+                <div class="sidebar-logo">
+                    <div class="logo-icon">&lt;/&gt;</div>
+                    <div>
+                        <h2>Study IT</h2>
+                        <p>Oracle Silver SQL</p>
+                    </div>
+                </div>
+
+                <nav>
+                    <a href="home.html">
+                        <span class="material-symbols-rounded">home</span>
+                        ホーム
+                    </a>
+                    <a href="words.html">
+                        <span class="material-symbols-rounded">menu_book</span>
+                        単語一覧
+                    </a>
+                    <a class="active" href="quiz.html">
+                        <span class="material-symbols-rounded">quiz</span>
+                        クイズ
+                    </a>
+                    <a href="favorite.html">
+                        <span class="material-symbols-rounded">star</span>
+                        お気に入り
+                    </a>
+                    <a href="history.html">
+                        <span class="material-symbols-rounded">monitoring</span>
+                        学習履歴
+                    </a>
+                    <a href="admin.html">
+                        <span class="material-symbols-rounded">admin_panel_settings</span>
+                        管理画面
+                    </a>
+                </nav>
+            </div>
+
+            <div class="sidebar-bottom">
+                <a href="login.html" class="logout-link">
+                    <span class="material-symbols-rounded">logout</span>
+                    ログアウト
+                </a>
+            </div>
+        </aside>
+
+        <main class="main">
+
+            <header class="topbar">
+                <div>
+                    <h1>クイズ結果発表 🎉</h1>
+                    <p>お疲れ様でした！今回のクイズ結果と分析レポートです。</p>
+                </div>
+                <div class="user-area">
+                    <div class="avatar">A</div>
+                </div>
+            </header>
+
+            <section class="card result-score-card" style="text-align: center; padding: 40px 20px;">
+                <div class="result-badge" style="display: inline-block; background: #FEF3C7; color: #D97706; padding: 8px 20px; border-radius: 20px; font-weight: 700; margin-bottom: 20px; font-size: 14px;">
+                    👑 Excellent!（素晴らしい出来栄えです）
+                </div>
+                <h2 style="font-size: 20px; color: #64748B; margin-bottom: 10px;">正答率</h2>
+                <div class="score-display" style="font-size: 64px; font-weight: 800; color: #4F46E5; margin-bottom: 20px;">
+                    80<span style="font-size: 28px; color: #1E293B; font-weight: 600;">%</span>
+                    <span style="font-size: 24px; color: #64748B; font-weight: 500; margin-left: 15px;">(8 / 10問正解)</span>
+                </div>
+                <p style="color: #475569; max-width: 500px; margin: 0 auto 30px auto; font-size: 15px; line-height: 1.6;">
+                    結合(JOIN)の理解が非常に深まっています。データ定義言語(DDL)に一部間違いが見られたため、復習をおすすめします！
+                </p>
+
+                <div style="display: flex; justify-content: center; gap: 15px; flex-wrap: wrap;">
+                    <a href="quiz.html" class="start-quiz-btn" style="text-decoration: none; width: auto; padding: 14px 28px;">
+                        <span class="material-symbols-rounded">refresh</span>
+                        もう一度クイズを解く
+                    </a>
+                    <a href="home.html" style="text-decoration: none; background: #F1F5F9; color: #475569; padding: 14px 28px; border-radius: 14px; font-weight: 700; display: flex; align-items: center; gap: 8px; transition: .2s;">
+                        <span class="material-symbols-rounded">home</span>
+                        ホームへ戻る
+                    </a>
+                </div>
+            </section>
+
+            <section class="card">
+                <h2 style="font-size: 18px; color: #1E293B; margin-bottom: 20px; display: flex; align-items: center; gap: 10px;">
+                    <span class="material-symbols-rounded" style="color: #06B6D4;">analytics</span> 
+                    分野別アドバイス
+                </h2>
+                
+                <div style="display: flex; flex-direction: column; gap: 20px;">
+                    <div style="border-bottom: 1px solid #F1F5F9; padding-bottom: 15px;">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+                            <span style="font-weight: 600; font-size: 15px;">結合(JOIN)</span>
+                            <span style="font-weight: 700; color: #10B981; font-size: 14px;">100% (3/3問正解)</span>
+                        </div>
+                        <div class="quiz-progress-bar-container" style="height: 8px;">
+                            <div class="quiz-progress-bar" style="width: 100%; background: linear-gradient(90deg, #10B981, #34D399);"></div>
+                        </div>
+                    </div>
+
+                    <div style="border-bottom: 1px solid #F1F5F9; padding-bottom: 15px;">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+                            <span style="font-weight: 600; font-size: 15px;">データ検索(SELECT)</span>
+                            <span style="font-weight: 700; color: #10B981; font-size: 14px;">100% (4/4問正解)</span>
+                        </div>
+                        <div class="quiz-progress-bar-container" style="height: 8px;">
+                            <div class="quiz-progress-bar" style="width: 100%; background: linear-gradient(90deg, #10B981, #34D399);"></div>
+                        </div>
+                    </div>
+
+                    <div style="padding-bottom: 5px;">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+                            <span style="font-weight: 600; font-size: 15px;">データ定義言語(DDL)</span>
+                            <span style="font-weight: 700; color: #F43F5E; font-size: 14px;">33% (1/3問正解) ⚠️ 苦手箇所</span>
+                        </div>
+                        <div class="quiz-progress-bar-container" style="height: 8px;">
+                            <div class="quiz-progress-bar" style="width: 33%; background: linear-gradient(90deg, #F43F5E, #FB7185);"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <footer class="footer">
+                © 2026 Study IT | Oracle Silver SQL Learning
+            </footer>
+
+        </main>
+
+    </div>
+
+</body>
+</html>

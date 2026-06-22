@@ -1,0 +1,970 @@
+/* ========================================
+   Study IT - Oracle Silver SQL Learning
+   style.css
+   ======================================== */
+
+/* ---------- Google Font ---------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap');
+
+/* ---------- CSS Variables ---------- */
+
+:root{
+
+    --primary:#4F46E5;
+    --primary-dark:#4338CA;
+
+    --success:#10B981;
+    --warning:#F59E0B;
+    --danger:#F43F5E;
+
+    --background:#EEF2FF;
+
+    --white:#ffffff;
+
+    --text:#1E293B;
+    --text-light:#64748B;
+
+    --glass:rgba(255,255,255,.18);
+
+    --shadow:
+
+        0 20px 60px rgba(0,0,0,.12);
+
+}
+
+/* ---------- Reset ---------- */
+
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+body{
+
+    font-family:"Noto Sans JP",sans-serif;
+
+    background:
+
+    linear-gradient(
+        135deg,
+        #4F46E5,
+        #6366F1,
+        #818CF8
+    );
+
+    min-height:100vh;
+
+    overflow-x:hidden;
+
+    color:var(--white);
+
+    position:relative;
+
+}
+
+/* ---------- Background ---------- */
+
+body::before{
+
+    content:"";
+
+    position:fixed;
+
+    width:700px;
+    height:700px;
+
+    border-radius:50%;
+
+    background:
+
+    rgba(255,255,255,.08);
+
+    top:-220px;
+    left:-150px;
+
+    z-index:-2;
+
+}
+
+body::after{
+
+    content:"";
+
+    position:fixed;
+
+    width:500px;
+    height:500px;
+
+    border-radius:50%;
+
+    background:
+
+    rgba(255,255,255,.06);
+
+    bottom:-100px;
+    right:-80px;
+
+    z-index:-2;
+
+}
+
+/* ---------- Layout ---------- */
+
+.container{
+
+    max-width:1400px;
+
+    margin:auto;
+
+    min-height:100vh;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:80px;
+
+    padding:60px;
+
+}
+
+/* =======================================
+            LEFT CONTENT
+======================================= */
+
+.left{
+
+    width:55%;
+
+    position:relative;
+
+}
+
+/* ---------- SQL Background ---------- */
+
+.sql-bg{
+
+    position:absolute;
+
+    inset:0;
+
+    pointer-events:none;
+
+    overflow:hidden;
+
+}
+
+.sql-bg span{
+
+    position:absolute;
+
+    color:rgba(255,255,255,.07);
+
+    font-size:42px;
+
+    font-weight:700;
+
+    font-family:Poppins,sans-serif;
+
+    animation:float 10s ease-in-out infinite;
+
+}
+
+.sql-bg span:nth-child(1){
+
+    top:5%;
+    left:58%;
+
+}
+
+.sql-bg span:nth-child(2){
+
+    top:22%;
+    left:75%;
+
+}
+
+.sql-bg span:nth-child(3){
+
+    top:42%;
+    left:60%;
+
+}
+
+.sql-bg span:nth-child(4){
+
+    top:62%;
+    left:70%;
+
+}
+
+.sql-bg span:nth-child(5){
+
+    top:82%;
+    left:50%;
+
+}
+
+.sql-bg span:nth-child(6){
+
+    top:18%;
+    left:15%;
+
+}
+
+.sql-bg span:nth-child(7){
+
+    top:52%;
+    left:25%;
+
+}
+
+.sql-bg span:nth-child(8){
+
+    top:76%;
+    left:10%;
+
+}
+
+/* ---------- Logo ---------- */
+
+.logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+    margin-bottom:70px;
+
+}
+
+.logo-icon{
+
+    width:72px;
+    height:72px;
+
+    border-radius:22px;
+
+    background:white;
+
+    color:var(--primary);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:28px;
+
+    font-weight:bold;
+
+    box-shadow:
+
+        0 12px 30px rgba(0,0,0,.15);
+
+}
+
+.logo-text h1{
+
+    font-size:54px;
+
+    font-family:Poppins,sans-serif;
+
+    font-weight:700;
+
+    line-height:1;
+
+}
+
+.logo-text p{
+
+    margin-top:6px;
+
+    font-size:16px;
+
+    opacity:.85;
+
+    letter-spacing:1px;
+
+}
+
+/* ---------- Hero ---------- */
+
+.hero-title{
+
+    font-size:56px;
+
+    font-weight:700;
+
+    line-height:1.35;
+
+    margin-bottom:28px;
+
+}
+
+.hero-title span{
+
+    color:#FDE68A;
+
+}
+
+.hero-description{
+
+    max-width:620px;
+
+    font-size:20px;
+
+    line-height:1.9;
+
+    opacity:.9;
+
+    margin-bottom:50px;
+
+}
+
+/* ---------- SQL Card ---------- */
+
+.sql-card{
+
+    width:560px;
+
+    background:rgba(255,255,255,.15);
+
+    backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,255,255,.2);
+
+    border-radius:24px;
+
+    padding:28px;
+
+    box-shadow:
+
+        0 15px 40px rgba(0,0,0,.12);
+
+}
+
+.sql-header{
+
+    display:flex;
+
+    gap:8px;
+
+    margin-bottom:20px;
+
+}
+
+.sql-header span{
+
+    width:12px;
+    height:12px;
+
+    border-radius:50%;
+
+}
+
+.sql-header span:nth-child(1){
+
+    background:#FF5F56;
+
+}
+
+.sql-header span:nth-child(2){
+
+    background:#FFBD2E;
+
+}
+
+.sql-header span:nth-child(3){
+
+    background:#27C93F;
+
+}
+
+.sql-card pre{
+
+    font-family:Consolas,monospace;
+
+    font-size:18px;
+
+    line-height:2;
+
+    color:#F8FAFC;
+
+}
+
+/* ---------- Animation ---------- */
+
+@keyframes float{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-12px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+/* =======================================
+            RIGHT CONTENT
+======================================= */
+
+.right{
+
+    width:45%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+/* ---------- Login Card ---------- */
+
+.login-card{
+
+    width:100%;
+    max-width:480px;
+
+    background:rgba(255,255,255,.96);
+
+    backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,255,255,.4);
+
+    border-radius:32px;
+
+    padding:48px;
+
+    box-shadow:
+
+        0 20px 60px rgba(0,0,0,.15);
+
+    animation:fadeUp .8s ease;
+
+}
+
+/* ---------- Card Title ---------- */
+
+.login-card h2{
+
+    color:var(--text);
+
+    font-size:38px;
+
+    font-weight:700;
+
+    margin-bottom:10px;
+
+}
+
+.login-card p{
+
+    color:var(--text-light);
+
+    font-size:16px;
+
+    margin-bottom:35px;
+
+}
+
+/* ---------- Form ---------- */
+
+.form-group{
+
+    margin-bottom:24px;
+
+}
+
+.form-group label{
+
+    display:block;
+
+    color:var(--text);
+
+    font-weight:600;
+
+    margin-bottom:10px;
+
+    font-size:15px;
+
+}
+
+.input-box{
+
+    position:relative;
+
+}
+
+.input-box i{
+
+    position:absolute;
+
+    left:18px;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    color:#94A3B8;
+
+    font-size:18px;
+
+}
+
+.input-box input{
+
+    width:100%;
+
+    height:56px;
+
+    border:none;
+
+    outline:none;
+
+    border-radius:14px;
+
+    background:#F8FAFC;
+
+    padding:0 20px 0 50px;
+
+    font-size:16px;
+
+    color:var(--text);
+
+    transition:.3s;
+
+}
+
+.input-box input:focus{
+
+    background:white;
+
+    border:2px solid var(--primary);
+
+    box-shadow:
+
+        0 0 0 5px rgba(79,70,229,.12);
+
+}
+
+/* ---------- Remember ---------- */
+
+.remember{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    margin-bottom:30px;
+
+}
+
+.checkbox{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    color:var(--text-light);
+
+    font-size:14px;
+
+}
+
+.checkbox input{
+
+    width:18px;
+
+    height:18px;
+
+    accent-color:var(--primary);
+
+}
+
+.forgot{
+
+    color:var(--primary);
+
+    font-size:14px;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+}
+
+.forgot:hover{
+
+    text-decoration:underline;
+
+}
+
+/* ---------- Login Button ---------- */
+
+.login-btn{
+
+    width:100%;
+
+    height:58px;
+
+    border:none;
+
+    border-radius:16px;
+
+    background:
+
+    linear-gradient(
+        90deg,
+        #4F46E5,
+        #6366F1
+    );
+
+    color:white;
+
+    font-size:18px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    box-shadow:
+
+        0 12px 25px rgba(79,70,229,.3);
+
+}
+
+.login-btn:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:
+
+        0 18px 35px rgba(79,70,229,.45);
+
+}
+
+.login-btn:active{
+
+    transform:translateY(0);
+
+}
+
+/* ---------- Divider ---------- */
+
+.divider{
+
+    display:flex;
+
+    align-items:center;
+
+    margin:32px 0;
+
+}
+
+.divider::before,
+
+.divider::after{
+
+    content:"";
+
+    flex:1;
+
+    height:1px;
+
+    background:#E2E8F0;
+
+}
+
+.divider span{
+
+    padding:0 18px;
+
+    color:#94A3B8;
+
+    font-size:14px;
+
+}
+
+/* ---------- Register ---------- */
+
+.register{
+
+    text-align:center;
+
+    color:var(--text-light);
+
+    font-size:15px;
+
+}
+
+.register a{
+
+    color:var(--primary);
+
+    font-weight:700;
+
+    text-decoration:none;
+
+}
+
+.register a:hover{
+
+    text-decoration:underline;
+
+}
+
+/* =======================================
+            Animation
+======================================= */
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:
+
+        translateY(30px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:
+
+        translateY(0);
+
+    }
+
+}
+/* Bottom */
+
+.bottom-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:24px;
+
+    margin-top:24px;
+
+}
+
+.footer{
+
+    text-align:center;
+
+    color:#94A3B8;
+
+    padding:30px 0;
+
+    font-size:14px;
+
+}
+
+/* Calendar */
+
+.calendar{
+
+    display:grid;
+
+    grid-template-columns:repeat(7,1fr);
+
+    gap:10px;
+
+    margin-top:20px;
+
+}
+
+.calendar span{
+
+    width:34px;
+
+    height:34px;
+
+    border-radius:10px;
+
+    background:#E2E8F0;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:13px;
+
+}
+
+.calendar .active{
+
+    background:#4F46E5;
+
+}
+
+
+
+/* =======================================
+            Responsive
+======================================= */
+@media(max-width:1000px){
+
+    .dashboard-grid,
+
+    .bottom-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+@media(max-width:1100px){
+
+    .container{
+
+        flex-direction:column;
+
+        justify-content:center;
+
+        padding:40px 24px;
+
+        gap:50px;
+
+    }
+
+    .left{
+
+        width:100%;
+
+        text-align:center;
+
+    }
+
+    .right{
+
+        width:100%;
+
+    }
+
+    .logo{
+
+        justify-content:center;
+
+    }
+
+    .hero-description{
+
+        margin:auto;
+
+        margin-bottom:40px;
+
+    }
+
+    .sql-card{
+
+        width:100%;
+
+        max-width:600px;
+
+        margin:auto;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .container{
+
+        padding:24px;
+
+    }
+
+    .logo-text h1{
+
+        font-size:40px;
+
+    }
+
+    .hero-title{
+
+        font-size:38px;
+
+    }
+
+    .hero-description{
+
+        font-size:17px;
+
+        line-height:1.8;
+
+    }
+
+    .sql-card{
+
+        padding:22px;
+
+    }
+
+    .sql-card pre{
+
+        font-size:15px;
+
+        line-height:1.8;
+
+    }
+
+    .login-card{
+
+        padding:32px 24px;
+
+        border-radius:24px;
+
+    }
+
+    .login-card h2{
+
+        font-size:30px;
+
+    }
+
+}

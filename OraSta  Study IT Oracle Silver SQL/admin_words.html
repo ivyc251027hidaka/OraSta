@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study IT | 単語登録・編集</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/admin_forms.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0">
+</head>
+
+<body class="dashboard-body">
+
+    <div class="dashboard">
+
+        <aside class="sidebar">
+            <div class="sidebar-top">
+                <div class="sidebar-logo">
+                    <div class="logo-icon">&lt;/&gt;</div>
+                    <div>
+                        <h2>Study IT</h2>
+                        <p>Oracle Silver SQL</p>
+                    </div>
+                </div>
+
+                <nav>
+                    <a href="home.html">
+                        <span class="material-symbols-rounded">home</span>
+                        ホーム
+                    </a>
+                    <a href="words.html">
+                        <span class="material-symbols-rounded">menu_book</span>
+                        単語一覧
+                    </a>
+                    <a href="quiz.html">
+                        <span class="material-symbols-rounded">quiz</span>
+                        クイズ
+                    </a>
+                    <a href="favorite.html">
+                        <span class="material-symbols-rounded">star</span>
+                        お気に入り
+                    </a>
+                    <a href="history.html">
+                        <span class="material-symbols-rounded">monitoring</span>
+                        学習履歴
+                    </a>
+                    <a class="active" href="admin.html">
+                        <span class="material-symbols-rounded">admin_panel_settings</span>
+                        管理画面
+                    </a>
+                </nav>
+            </div>
+
+            <div class="sidebar-bottom">
+                <a href="login.html" class="logout-link">
+                    <span class="material-symbols-rounded">logout</span>
+                    ログアウト
+                </a>
+            </div>
+        </aside>
+
+        <main class="main">
+
+            <header class="topbar">
+                <a href="admin_words.html" class="add-btn" style="text-decoration: none;">
+                    <span class="material-symbols-rounded">add</span>
+                    新規単語登録
+                </a>
+                <div class="user-area">
+                    <a href="admin.html" class="back-btn">
+                        <span class="material-symbols-rounded">arrow_back</span>
+                        一覧に戻る
+                    </a>
+                </div>
+            </header>
+
+            <section class="card form-card">
+                <form action="#" method="POST" class="admin-form">
+                    
+                    <div class="form-group">
+                        <label for="word_name">単語・構文名 <span class="required">必須</span></label>
+                        <input type="text" id="word_name" name="word_name" placeholder="例: SELECT, INNER JOIN, NVL" required>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="category">分野カテゴリ <span class="required">必須</span></label>
+                            <select id="category" name="category" required>
+                                <option value="">選択してください</option>
+                                <option value="select">データ検索(SELECT)</option>
+                                <option value="join">結合(JOIN)</option>
+                                <option value="function">関数</option>
+                                <option value="subquery">副問合せ</option>
+                                <option value="ddl">データ定義言語(DDL)</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="difficulty">難易度 <span class="required">必須</span></label>
+                            <select id="difficulty" name="difficulty" required>
+                                <option value="">選択してください</option>
+                                <option value="1">★☆☆ (易しい)</option>
+                                <option value="2">★★☆ (普通)</option>
+                                <option value="3">★★★ (難しい)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="description">意味・解説 <span class="required">必須</span></label>
+                        <textarea id="description" name="description" rows="4" placeholder="単語の機能や役割、Oracle特有の挙動などを入力してください" required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="sql_example">SQL構文・コード例</label>
+                        <textarea id="sql_example" name="sql_example" rows="5" class="code-textarea" placeholder="SELECT column_name FROM table_name WHERE condition;"></textarea>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="button" class="btn btn-secondary" onclick="location.href='admin.html'">キャンセル</button>
+                        <button type="submit" class="btn btn-primary">
+                            <span class="material-symbols-rounded">save</span>
+                            この内容で登録する
+                        </button>
+                    </div>
+
+                </form>
+            </section>
+
+            <footer class="footer">
+                © 2026 Study IT | Oracle Silver SQL Learning (Admin Mode)
+            </footer>
+
+        </main>
+
+    </div>
+
+</body>
+</html>
